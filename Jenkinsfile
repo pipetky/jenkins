@@ -21,4 +21,4 @@ pipeline {
             echo 'Pipeline finished!'
         }
     }
-}
+}//asd
