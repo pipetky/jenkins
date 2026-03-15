@@ -107,7 +107,7 @@ pipeline {
                     // Но мы просто показываем, что токен доступен
                     sh """
                         echo "Deploying application version ${APP_VERSION} to ${DEPLOY_ENV}..."
-                        echo "Authenticating with secret token (length: ${#SECRET_TOKEN} characters)"
+
                         
                         if [ "${DEPLOY_ENV}" = "prod" ]; then
                             echo "⚠️  PRODUCTION DEPLOYMENT - EXTRA CAUTION REQUIRED"
@@ -119,7 +119,7 @@ pipeline {
                         
                         echo "✅ Application ${APP_VERSION} successfully deployed to ${DEPLOY_ENV}"
                     """
-                    
+                    echo "Secret token length: ${SECRET_TOKEN.length()} characters"
                     echo "Deployment to ${env.DEPLOY_ENV} completed!"
                     
                     // Показываем, что токен был использован (без раскрытия значения)
