@@ -14,7 +14,7 @@ pipeline {
         RUN_TESTS = "${params.RUN_TESTS}"
         DEPLOY_ENV = "${params.DEPLOY_ENV}"
         // Для секрета используем credentials
-        SECRET_TOKEN = credentials('my-secret-token-id') // ID вашего credentials в Jenkins
+        SECRET_TOKEN = credentials('495341a1-8fec-4e2c-b222-7a9ed52353b6') // ID вашего credentials в Jenkins
     }
     
     stages {
