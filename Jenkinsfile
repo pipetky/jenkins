@@ -110,7 +110,7 @@ pipeline {
                         //  Сообщение в лог о запуске интеграционных тестов
                         echo "Running integration tests"
                         //  Shell-скрипт, который создаёт каталог и файл отчёта для интеграционных тестов
-                        //test
+                        //test123
                         sh '''
                         echo "Running integration tests"
                         #  Создаём каталог для отчётов failsafe
